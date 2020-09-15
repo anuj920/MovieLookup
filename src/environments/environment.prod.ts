@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+  production: true,
+
+  TMDBserviceUrl: "https://api.themoviedb.org/3"
+  
 };

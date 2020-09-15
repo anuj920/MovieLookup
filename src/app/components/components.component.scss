@@ -1,0 +1,48 @@
+.Mycontainer{
+    padding: 1% 10%;
+}
+
+.main{
+    display: flex;
+}
+
+.search-main{
+    width: 100%;
+}
+
+.main-list{
+    width: 33.33%;
+}
+
+.main-detail{
+    width: 66.66%;
+}
+
+@media only screen and (max-width: 992px){
+    .Mycontainer{
+        padding: 1% 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 767px){
+    .Mycontainer{
+        padding: 1% 12.5px;
+    }
+
+    .main-list{
+        width: 40%;
+    }
+    
+    .main-detail{
+        width: 60%;
+    }
+    
+}
+
+@media only screen and (max-width: 556px){
+    .Mycontainer{
+        padding: 1% 7.5px;
+    }
+    
+}

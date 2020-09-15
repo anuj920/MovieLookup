@@ -1,0 +1,33 @@
+
+
+
+
+<div class="movie-detail" *ngIf="detailShow">
+    <div class="movie-content">
+        <div class="movie-name">
+            <h2>{{ movieDetail.original_title | titlecase}}</h2>
+        </div>
+        <br>
+        <div class="movie-img">
+            <img [src]="postalUrl" alt="">
+        </div>
+        <div class="movie-info">
+
+            <div class="movie-release">
+                <p><span class="head">Released On: </span>{{ movieDetail.release_date | date: 'mediumDate'  }}</p>
+            </div>
+            <div class="movie-rating">
+                <p><span class="head">Average Rating: </span>{{ movieDetail.vote_average }}/10</p>
+            </div>
+            <div class="movie-genre">
+                <p><span class="head">Genre:</span> {{ genres }}</p>
+            </div>
+
+        </div>
+
+        <div class="movie-description">
+            <p><span class="head">Description</span> <br> {{ movieDetail.overview }}</p>
+        </div>
+        <br>
+    </div>
+</div>

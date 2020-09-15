@@ -1,0 +1,44 @@
+<div class="movie-list" *ngIf="movieListShow">
+
+    <div class="keyword">
+        <span>Search Keyword : {{keyword | titlecase }}</span>
+    </div>
+
+    <div class="movie" *ngFor="let movie of movieList" (click)="getMovieDetail(movie.id)">
+        <div class="movie-top">
+
+            <div class="movie-postal">
+
+                <img [src]="getMovieImage(movie.poster_path)" alt="">
+
+            </div>
+
+            <div class="movie-detail">
+                <p>{{movie.original_title | titlecase}}</p>
+                <p>Avg. Vote:  {{movie.vote_average}}/10</p>
+                <p>Released on: {{ movie.release_date  | date: 'mediumDate' }}</p>
+            </div>
+
+        </div>
+
+        <div class="movie-desc">
+            <p>{{ movie?.overview?.length < 100 ? movie?.overview : movie?.overview.slice(0,95) + "..." }}</p>
+        </div>
+    </div>
+
+    <div class="pagination" *ngIf="totalpages>1 && total_results>0">
+
+        <span *ngIf="current_page!=1"> <button class="prev" type="button" (click)="prevpage()">Previous</button></span>
+
+        <span *ngIf="current_page!=totalpages"><button class="next" type="button" (click)="nextpage()">Next</button></span>
+
+
+    </div>
+
+
+</div>
+
+
+<div class="not-availble" *ngIf="!movieListShow">
+    <img src="https://www.solartiger.in/images/NoDataFound.png" alt="">
+</div>

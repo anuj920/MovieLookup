@@ -1,0 +1,72 @@
+.movie-list{
+    max-height: 80vh;
+    overflow: auto;
+    border-right: 1px dotted #E0F7FA;
+}
+
+.keyword{
+    padding: 10px 0;
+    border-bottom: 1px solid #B2EBF2;
+
+    & span{
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+.movie{
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #B2EBF2;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.movie-top{
+    display: flex;
+}
+
+
+.movie-postal{
+    display: inline-block;
+    width: 100px;
+    margin-right: 2.5px;
+
+    & img{
+        height: 90px;
+        width: 80px;
+        border-radius: 5px;
+    }
+}
+
+.movie-detail{
+    display: inline-block;
+}
+
+.movie-desc{
+    font-size: 13px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: 10px 5px;
+    border-bottom: 1px solid #80DEEA;
+
+    & button{
+        background: linear-gradient(60deg, #26c6da, #00acc1);
+        border: 0;
+        padding: 8px 24px;
+        border-radius: 5px;
+        color: white;
+        margin: 0 10px;
+    }
+}
+
+.not-availble{
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px;
+    max-height: 60vh;
+    border-right: 1px solid #B2EBF2;
+}

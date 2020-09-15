@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "MovieLookup"
+    }
+  },
+  "defaultProject": "MovieLookup",
+  "cli": {
+    "analytics": false
+  }
 }

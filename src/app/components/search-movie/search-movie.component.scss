@@ -1,0 +1,36 @@
+.search{
+    width: 99%;
+    padding: 20px 10px;
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    position: relative;
+}
+
+.search-input{
+    margin-right: 15px;
+}
+
+input{
+    width: 80%;
+    font-size: 16px;
+    padding: 10px 24px;
+    border: 1px solid #00acc1;
+    border-radius: 5px;
+}
+
+.search-button button{
+    position: absolute;
+    right: 24px;
+    background: linear-gradient(60deg, #26c6da, #00acc1);
+    border: 0;
+    padding: 10px 24px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 767px){
+    input{
+        width: 65%;
+    }
+}

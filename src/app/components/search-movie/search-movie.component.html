@@ -1,0 +1,17 @@
+<div class="search">
+
+
+    <span class="search-input">
+
+        <input type="text" name="movie" #movie [value]="search_query" required>
+
+    </span>
+
+    <span class="search-button">
+
+        <button type="button" (click)="searchMovie(movie.value)">Search</button>
+
+    </span>
+
+
+</div>
